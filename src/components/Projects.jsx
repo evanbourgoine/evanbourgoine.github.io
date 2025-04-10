@@ -274,7 +274,7 @@ function Projects() {
       
       <div className="cta-container">
         <p className="cta-text">Want to see more of my work?</p>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="github-link">
+        <a href="https://github.com/evanbourgoine" target="_blank" rel="noopener noreferrer" className="github-link">
           Check out my GitHub <ExternalLink size={16} className="link-icon" />
         </a>
       </div>
