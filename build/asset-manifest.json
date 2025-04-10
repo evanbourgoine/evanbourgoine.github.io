@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b5d879b.css",
-    "main.js": "/static/js/main.cfb5b84b.js",
+    "main.css": "/static/css/main.eccadde2.css",
+    "main.js": "/static/js/main.edae4cb6.js",
+    "static/media/nubble.jpg": "/static/media/nubble.d5b5e71f55f3428e75c2.jpg",
     "static/media/profile.JPG": "/static/media/profile.84ee3dd9c8656df5efb6.JPG",
+    "static/media/aboutme.jpg": "/static/media/aboutme.b062c0b581ba28773285.jpg",
+    "static/media/yorkfriends.JPG": "/static/media/yorkfriends.1b958bb5629a98987bf7.JPG",
+    "static/media/rockycoast.jpg": "/static/media/rockycoast.2cb451424977131220b4.jpg",
     "index.html": "/index.html",
-    "main.1b5d879b.css.map": "/static/css/main.1b5d879b.css.map",
-    "main.cfb5b84b.js.map": "/static/js/main.cfb5b84b.js.map"
+    "main.eccadde2.css.map": "/static/css/main.eccadde2.css.map",
+    "main.edae4cb6.js.map": "/static/js/main.edae4cb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b5d879b.css",
-    "static/js/main.cfb5b84b.js"
+    "static/css/main.eccadde2.css",
+    "static/js/main.edae4cb6.js"
   ]
 }
