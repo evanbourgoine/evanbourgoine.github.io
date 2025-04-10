@@ -1,4 +1,4 @@
-/* HomePage Specific Styles */
+/* Simple Modern HomePage Styles with Plant Elements */
 
 /* Hero Section */
 .hero-section {
@@ -7,6 +7,43 @@
   align-items: center;
   padding: 2rem 0;
   background-color: var(--bg-off-white);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Plant decorations */
+.plant-decoration {
+  position: absolute;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.plant-top-right {
+  top: 40px;
+  right: 5%;
+  width: 150px;
+  transform: rotate(10deg);
+}
+
+.plant-bottom-left {
+  bottom: 120px;
+  left: 5%;
+  width: 180px;
+  transform: rotate(-5deg);
+}
+
+.small-plant-right {
+  bottom: 15%;
+  right: 10%;
+  width: 100px;
+}
+
+.small-plant-left {
+  top: 20%;
+  left: 8%;
+  width: 80px;
+  transform: rotate(-10deg);
 }
 
 .hero-container {
@@ -14,6 +51,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .profile-container {
@@ -36,28 +75,20 @@
   box-shadow: var(--shadow-md);
   background-color: var(--bg-light-alt);
   position: relative;
+  z-index: 2;
 }
 
-/* Circle decorations */
-.profile-image::before {
-  content: '';
+/* Simple decorative accent behind the profile image */
+.profile-accent {
   position: absolute;
-  top: -15px;
-  left: -15px;
-  right: -15px;
-  bottom: -15px;
+  width: 320px;
+  height: 320px;
+  background-color: rgba(76, 175, 80, 0.08);
   border-radius: 50%;
-  border: 2px dashed var(--primary-light);
-  animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .image-placeholder {
@@ -102,10 +133,34 @@
   margin-top: 2rem;
 }
 
+/* Simple diagonal divider */
+.diagonal-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: var(--bg-light);
+  transform: skewY(-3deg);
+  transform-origin: bottom left;
+}
+
 /* What I Do Section */
 .what-i-do-section {
   padding: 5rem 2rem;
   background-color: var(--bg-light);
+  position: relative;
+}
+
+/* Plant in the services section */
+.plant-services {
+  position: absolute;
+  right: 4%;
+  bottom: 50px;
+  width: 120px;
+  opacity: 0.1;
+  transform: rotate(5deg);
+  z-index: 0;
 }
 
 .section-heading {
@@ -126,7 +181,7 @@
   bottom: -0.75rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;
+  width: 60px;
   height: 3px;
   background-color: var(--primary);
 }
@@ -137,6 +192,8 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .service-card {
@@ -182,6 +239,18 @@
 .featured-projects-section {
   padding: 5rem 2rem;
   background-color: var(--bg-off-white);
+  position: relative;
+}
+
+/* Plant in projects section */
+.plant-projects {
+  position: absolute;
+  left: 3%;
+  top: 60px;
+  width: 140px;
+  opacity: 0.12;
+  transform: rotate(-8deg);
+  z-index: 0;
 }
 
 .projects-grid {
@@ -190,6 +259,8 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .project-card {
@@ -201,10 +272,24 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .project-card:hover {
   box-shadow: var(--shadow-md);
+}
+
+/* Add a subtle accent to the top of project cards */
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
 .project-icon {
@@ -240,6 +325,27 @@
   padding: 5rem 2rem;
   background-color: var(--bg-light);
   text-align: center;
+  position: relative;
+}
+
+/* Plants in CTA section */
+.plant-cta-right {
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+  width: 100px;
+  opacity: 0.12;
+  z-index: 0;
+}
+
+.plant-cta-left {
+  position: absolute;
+  left: 7%;
+  top: 20%;
+  width: 90px;
+  opacity: 0.1;
+  transform: rotate(-15deg);
+  z-index: 0;
 }
 
 .cta-container {
@@ -249,6 +355,20 @@
   background-color: var(--bg-off-white);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Add subtle accent to the CTA container */
+.cta-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
 }
 
 .cta-container h2 {
@@ -291,8 +411,13 @@
   }
   
   .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
+  }
+  
+  .profile-accent {
+    width: 250px;
+    height: 250px;
   }
   
   .profile-content h1 {
@@ -322,5 +447,11 @@
   
   .cta-container h2 {
     font-size: 1.75rem;
+  }
+  
+  /* Hide some plants on mobile */
+  .small-plant-left,
+  .plant-services {
+    display: none;
   }
 }

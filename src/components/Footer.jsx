@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-content">
         <div className="social-links">
           <motion.a 
-            href="https://github.com/yourusername" 
+            href="https://github.com/evanbourgoine" 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-link"
@@ -22,7 +22,7 @@ function Footer() {
           </motion.a>
           
           <motion.a 
-            href="https://linkedin.com/in/yourusername" 
+            href="https://www.linkedin.com/in/evan-bourgoine-873279237/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-link"
@@ -34,19 +34,19 @@ function Footer() {
           </motion.a>
           
           <motion.a 
-            href="https://twitter.com/yourusername" 
+            href="https://x.com/evanmbourgoine" 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-link"
             whileHover={{ y: -5 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="Twitter"
+            aria-label="X"
           >
             <Twitter size={20} />
           </motion.a>
           
           <motion.a 
-            href="mailto:your.email@example.com" 
+            href="mailto:evan.bourgoine@gmail.com" 
             className="social-link"
             whileHover={{ y: -5 }}
             whileTap={{ scale: 0.9 }}
@@ -57,7 +57,7 @@ function Footer() {
         </div>
         
         <p className="footer-text">
-          &copy; {currentYear} Your Name. All rights reserved.
+          &copy; {currentYear} Evan M. Bourgoine | All rights reserved.
         </p>
       </div>
     </footer>

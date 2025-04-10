@@ -84,10 +84,13 @@ const HomePage = ({ setActiveTab }) => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <h1>Hi, I'm <span className="primary-color">Evan Bourgoine</span></h1>
-              <h2 className="profession">Software Engineer & Designer</h2>
+              <h2 className="profession">Computer Science Student @ Virginia Tech</h2>
               <p className="bio">
-                I create elegant solutions to complex problems, with a focus on intuitive user experiences
-                and clean, maintainable code. Specializing in modern web development and UI/UX design.
+              Currently an engineering student with a passion for building clean,
+               user-focused tools. I enjoy working on creative, practical 
+               projects that blend design with functionality, whether it's a mobile app,
+                a data-driven web tool, or something totally experimental. Take a look around
+                my website to learn more about me and my work.
               </p>
               
               <div className="hero-cta">
